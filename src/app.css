@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rock+Salt&display=swap");
+
+:root {
+  --black-color: #000;
+  --dark-prim-color: #344055;
+  --light-prim-color: #386098;
+  --light-color: #f4f4f4e8;
+  --white-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Aleo", serif;
+  line-height: 1.5;
+  font-size: 1em;
+  background: var(--light-color);
+  color: var(--black-color);
+}
+
+.app {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 1rem;
+  grid-area: header;
+}
+
+.main {
+  padding: 1rem;
+  grid-area: main;
+}
+
+.footer {
+  padding: 1rem;
+  grid-area: footer;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-darkmode-color);
+    color: var(--font-darkmode-color);
+  }
+} */
+
+@media only screen and (max-width: 767px) {
+  /* Estilos para pantallas pequeñas */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Estilos para tabletas */
+}
+
+@media only screen and (min-width: 992px) {
+  /* Estilos para computadoras de escritorio */
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Estilos para pantallas extra grandes */
+}
